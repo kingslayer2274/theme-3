@@ -1,0 +1,497 @@
+$very-light-blue: #d9f0fe;
+$blue: #009ffd;
+$dark-blue: #0e76ef;
+
+$dark: #003a48;
+
+body {
+  #home {
+    .home-text {
+      .primary {
+        font-size: 2.5rem;
+      }
+      .secondary {
+        font-size: 3rem;
+      }
+
+      button {
+        background-color: $blue;
+        border-radius: 4rem;
+      }
+      i {
+        color: $blue;
+      }
+    }
+  }
+  .bg {
+    position: relative;
+  }
+  .front {
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    max-width: 17rem;
+    max-height: 30rem;
+  }
+
+  #presenting {
+    margin-top: 14rem;
+    background-image: url("../Appio\ Site_files/half-circle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .card-body {
+      border-radius: 5px;
+      box-shadow: 0px 3px 6px grey;
+      i {
+        color: $blue;
+        background-color: $very-light-blue;
+        padding: 1.2rem;
+      }
+      &:hover i {
+        color: white;
+        background-color: $blue;
+        transition: all 0.5s;
+      }
+    }
+    button {
+      border-radius: 10rem;
+      color: $blue;
+      border: 1px solid $blue;
+      &:hover {
+        color: white;
+        background-color: $blue;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+    }
+  }
+  #story {
+    position: relative;
+    background-image: url("../Appio\ Site_files/backcircle.png");
+    background-repeat: no-repeat;
+    height: 30rem;
+    background-size: contain;
+    background-position: right;
+    // img {
+    //   position: absolute;
+    //   right: -4rem;
+    //   top: -2rem;
+
+    //   max-height: 28rem;
+    // }
+    .float1 {
+      position: absolute;
+      top: 0;
+      left: 60%;
+      background-color: white;
+    }
+    .float2 {
+      position: absolute;
+      top: 30%;
+      left: 30%;
+      background-color: white;
+    }
+    .float3 {
+      position: absolute;
+      top: 50%;
+      left: 80%;
+      background-color: white;
+    }
+    .float4 {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      background-color: white;
+    }
+
+    i {
+      color: $blue;
+    }
+  }
+  #stock {
+    margin-top: 7rem;
+    background-image: url("../Appio\ Site_files/work-back.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: bottom;
+    img {
+      max-height: 30rem;
+    }
+    .title-num {
+      color: $blue;
+    }
+    .p1,
+    .p3 {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 2rem;
+    }
+  }
+  #usual {
+    background-color: #f6f7fb;
+    .row {
+      .col-md-3 {
+        margin-top: 7rem;
+        i {
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  #screens {
+    .owl-nav button {
+      position: absolute;
+      top: 50%;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    .owl-nav button.owl-prev {
+      left: 0;
+    }
+    .owl-nav button.owl-next {
+      right: 0;
+    }
+
+    .owl-dots {
+      text-align: center;
+      padding-top: 15px;
+    }
+    .owl-dots button.owl-dot {
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      display: inline-block;
+      background: #ccc;
+      margin: 0 3px;
+    }
+    .owl-dots button.owl-dot.active {
+      background-color: #000;
+    }
+    .owl-dots button.owl-dot:focus {
+      outline: none;
+    }
+    .owl-nav button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.38) !important;
+    }
+    span {
+      font-size: 70px;
+      position: relative;
+      top: -5px;
+    }
+    .owl-nav button:focus {
+      outline: none;
+    }
+  }
+
+  #video-circle {
+    background-color: rgba($color: #eee, $alpha: 0.4);
+    height: 30rem;
+    .vid-cir {
+      border-radius: 50%;
+      position: relative;
+    }
+    .cir {
+      border-radius: 50%;
+      max-width: 22rem;
+      max-height: 22rem;
+      position: absolute;
+      top: 0;
+      left: 30%;
+      z-index: 999;
+      &::after {
+        content: url("../Appio\ Site_files/blog2.jpg");
+        color: red;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .quote1,
+    .quote2 {
+      max-width: 20px;
+    }
+    .review {
+      max-width: 18rem;
+      max-height: 18rem;
+      border-radius: 50%;
+      background-color: #fff;
+      padding: 2rem 4rem;
+      position: absolute;
+      top: 7rem;
+      left: 60%;
+    }
+  }
+
+  #verify {
+    background-image: url("../Appio\ Site_files/half-circle.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    i {
+      color: $blue;
+    }
+  }
+
+  #plans {
+    background-image: url("../Appio\ Site_files/backprice.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    .card {
+      border-radius: 7px;
+      position: relative;
+      .border-word {
+        font-size: 0.8rem;
+        border-radius: 5rem;
+        background-color: $blue;
+        display: none;
+      }
+      button {
+        background-color: #003a48;
+        border-radius: 5rem;
+        padding: 0.6rem 1.5rem;
+        color: white;
+        i {
+          background-color: #285866;
+          &:hover {
+            color: $blue;
+          }
+        }
+      }
+      &:hover {
+        border: 1px solid $blue;
+        .border-word {
+          display: inline-block;
+          position: absolute;
+          top: -1rem;
+          left: 32%;
+          color: white;
+          transition: all 0.5s;
+        }
+        transition: all 0.5s;
+      }
+    }
+  }
+  #faq {
+    background-color: #f4f8f9;
+    a {
+      color: rgba(0, 0, 0, 0.671);
+      &:hover {
+        color: $blue;
+      }
+    }
+    .panel-body {
+      font-size: 0.8rem;
+    }
+  }
+  #blog {
+    .main {
+      color: $blue;
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    .card {
+      &:hover .card-title {
+        color: $blue;
+        transition: all 0.5s;
+      }
+      &:hover {
+        box-shadow: 0 3px 4px grey;
+        transition: all 0.5s;
+      }
+    }
+  }
+  #search {
+    position: relative;
+    .input-group {
+      max-width: 25rem;
+      margin: 11rem auto 2rem auto;
+      color: white;
+      border-radius: 50rem;
+      button {
+        background-color: #fff;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+    i {
+      position: absolute;
+      top: 1rem;
+      left: 34%;
+      font-size: 13rem;
+      padding: 5rem;
+      opacity: 0.6;
+      background-color: $blue;
+    }
+  }
+  footer {
+    .border-down {
+      border-bottom: 1px solid #eee;
+      padding-bottom: 2rem;
+    }
+    .bg {
+      background-image: url("../Appio\ Site_files/background.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+    }
+    .main {
+      margin-top: 10rem;
+      color: $blue;
+    }
+    i {
+      font-size: 0.8rem;
+    }
+    i:hover {
+      color: $blue;
+
+      cursor: pointer;
+    }
+    .cp {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+// ACCORDION
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #e4e5e7;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.panel-default > .panel-heading a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.panel-default > .panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
+  float: right;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  transition: transform 0.25s linear;
+  -webkit-transition: -webkit-transform 0.25s linear;
+}
+
+.panel-default > .panel-heading a[aria-expanded="true"] {
+  background-color: #eee;
+}
+
+.panel-default > .panel-heading a[aria-expanded="true"]:after {
+  content: "\2212";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.panel-default > .panel-heading a[aria-expanded="false"]:after {
+  content: "\002b";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+// MEDIA QUERIES
+
+@media only screen and (max-width: 1000px) {
+  body {
+    #home {
+      .front {
+        max-width: 10rem;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:1200px) {
+  body {
+    #video-circle {
+      .review {
+        font-size: 0.8rem;
+        padding-left: 5rem;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:1000px) {
+  body {
+    #video-circle {
+      .review {
+        font-size: 0.5rem;
+        left: 70%;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:1200px) {
+  body {
+    #search {
+      i {
+        top: 2rem;
+        left: 32%;
+        font-size: 12rem;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:1000px) {
+  body {
+    #search {
+      i {
+        top: 2rem;
+        left: 25%;
+        font-size: 12rem;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:770px) {
+  body {
+    #search {
+      i {
+        top: 2rem;
+        left: 17%;
+        font-size: 12rem;
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:500px) {
+  body {
+    #search {
+      i {
+        left: 8%;
+        font-size: 10rem;
+      }
+    }
+    #video-circle {
+      .cir {
+        left: 0;
+      }
+    }
+  }
+}

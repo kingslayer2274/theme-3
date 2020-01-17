@@ -1,0 +1,366 @@
+body #home .home-text .primary {
+  font-size: 2.5rem; }
+
+body #home .home-text .secondary {
+  font-size: 3rem; }
+
+body #home .home-text button {
+  background-color: #009ffd;
+  border-radius: 4rem; }
+
+body #home .home-text i {
+  color: #009ffd; }
+
+body .bg {
+  position: relative; }
+
+body .front {
+  position: absolute;
+  top: 10%;
+  left: 28%;
+  max-width: 17rem;
+  max-height: 30rem; }
+
+body #presenting {
+  margin-top: 14rem;
+  background-image: url("../Appio Site_files/half-circle.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+  body #presenting .card-body {
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px grey; }
+    body #presenting .card-body i {
+      color: #009ffd;
+      background-color: #d9f0fe;
+      padding: 1.2rem; }
+    body #presenting .card-body:hover i {
+      color: white;
+      background-color: #009ffd;
+      transition: all 0.5s; }
+  body #presenting button {
+    border-radius: 10rem;
+    color: #009ffd;
+    border: 1px solid #009ffd; }
+    body #presenting button:hover {
+      color: white;
+      background-color: #009ffd;
+      cursor: pointer;
+      transition: all 0.5s; }
+
+body #story {
+  position: relative;
+  background-image: url("../Appio Site_files/backcircle.png");
+  background-repeat: no-repeat;
+  height: 30rem;
+  background-size: contain;
+  background-position: right; }
+  body #story .float1 {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    background-color: white; }
+  body #story .float2 {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: white; }
+  body #story .float3 {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    background-color: white; }
+  body #story .float4 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background-color: white; }
+  body #story i {
+    color: #009ffd; }
+
+body #stock {
+  margin-top: 7rem;
+  background-image: url("../Appio Site_files/work-back.png");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: bottom; }
+  body #stock img {
+    max-height: 30rem; }
+  body #stock .title-num {
+    color: #009ffd; }
+  body #stock .p1,
+  body #stock .p3 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 2rem; }
+
+body #usual {
+  background-color: #f6f7fb; }
+  body #usual .row .col-md-3 {
+    margin-top: 7rem; }
+    body #usual .row .col-md-3 i {
+      color: #009ffd; }
+
+body #screens .owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out; }
+
+body #screens .owl-nav button.owl-prev {
+  left: 0; }
+
+body #screens .owl-nav button.owl-next {
+  right: 0; }
+
+body #screens .owl-dots {
+  text-align: center;
+  padding-top: 15px; }
+
+body #screens .owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc;
+  margin: 0 3px; }
+
+body #screens .owl-dots button.owl-dot.active {
+  background-color: #000; }
+
+body #screens .owl-dots button.owl-dot:focus {
+  outline: none; }
+
+body #screens .owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.38) !important; }
+
+body #screens span {
+  font-size: 70px;
+  position: relative;
+  top: -5px; }
+
+body #screens .owl-nav button:focus {
+  outline: none; }
+
+body #video-circle {
+  background-color: rgba(238, 238, 238, 0.4);
+  height: 30rem; }
+  body #video-circle .vid-cir {
+    border-radius: 50%;
+    position: relative; }
+  body #video-circle .cir {
+    border-radius: 50%;
+    max-width: 22rem;
+    max-height: 22rem;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    z-index: 999; }
+    body #video-circle .cir::after {
+      content: url("../Appio Site_files/blog2.jpg");
+      color: red;
+      width: 100%;
+      height: 100%; }
+  body #video-circle .quote1,
+  body #video-circle .quote2 {
+    max-width: 20px; }
+  body #video-circle .review {
+    max-width: 18rem;
+    max-height: 18rem;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 2rem 4rem;
+    position: absolute;
+    top: 7rem;
+    left: 60%; }
+
+body #verify {
+  background-image: url("../Appio Site_files/half-circle.png");
+  background-repeat: no-repeat;
+  background-size: contain; }
+  body #verify i {
+    color: #009ffd; }
+
+body #plans {
+  background-image: url("../Appio Site_files/backprice.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  body #plans .card {
+    border-radius: 7px;
+    position: relative; }
+    body #plans .card .border-word {
+      font-size: 0.8rem;
+      border-radius: 5rem;
+      background-color: #009ffd;
+      display: none; }
+    body #plans .card button {
+      background-color: #003a48;
+      border-radius: 5rem;
+      padding: 0.6rem 1.5rem;
+      color: white; }
+      body #plans .card button i {
+        background-color: #285866; }
+        body #plans .card button i:hover {
+          color: #009ffd; }
+    body #plans .card:hover {
+      border: 1px solid #009ffd;
+      transition: all 0.5s; }
+      body #plans .card:hover .border-word {
+        display: inline-block;
+        position: absolute;
+        top: -1rem;
+        left: 32%;
+        color: white;
+        transition: all 0.5s; }
+
+body #faq {
+  background-color: #f4f8f9; }
+  body #faq a {
+    color: rgba(0, 0, 0, 0.671); }
+    body #faq a:hover {
+      color: #009ffd; }
+  body #faq .panel-body {
+    font-size: 0.8rem; }
+
+body #blog .main {
+  color: #009ffd;
+  font-size: 0.8rem;
+  font-weight: bold; }
+
+body #blog .card:hover .card-title {
+  color: #009ffd;
+  transition: all 0.5s; }
+
+body #blog .card:hover {
+  box-shadow: 0 3px 4px grey;
+  transition: all 0.5s; }
+
+body #search {
+  position: relative; }
+  body #search .input-group {
+    max-width: 25rem;
+    margin: 11rem auto 2rem auto;
+    color: white;
+    border-radius: 50rem; }
+    body #search .input-group button {
+      background-color: #fff;
+      border-left: 1px solid #eee;
+      border-right: 1px solid #eee; }
+      body #search .input-group button:hover {
+        color: #009ffd; }
+  body #search i {
+    position: absolute;
+    top: 1rem;
+    left: 34%;
+    font-size: 13rem;
+    padding: 5rem;
+    opacity: 0.6;
+    background-color: #009ffd; }
+
+body footer .border-down {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2rem; }
+
+body footer .bg {
+  background-image: url("../Appio Site_files/background.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom; }
+
+body footer .main {
+  margin-top: 10rem;
+  color: #009ffd; }
+
+body footer i {
+  font-size: 0.8rem; }
+
+body footer i:hover {
+  color: #009ffd;
+  cursor: pointer; }
+
+body footer .cp {
+  font-size: 0.7rem; }
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #e4e5e7;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.panel-default > .panel-heading a {
+  display: block;
+  padding: 10px 15px; }
+
+.panel-default > .panel-heading a:after {
+  content: "";
+  position: relative;
+  top: 1px;
+  float: right;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: transform 0.25s linear;
+  -webkit-transition: -webkit-transform 0.25s linear; }
+
+.panel-default > .panel-heading a[aria-expanded="true"] {
+  background-color: #eee; }
+
+.panel-default > .panel-heading a[aria-expanded="true"]:after {
+  content: "\2212";
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.panel-default > .panel-heading a[aria-expanded="false"]:after {
+  content: "\002b";
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+@media only screen and (max-width: 1000px) {
+  body #home .front {
+    max-width: 10rem; } }
+
+@media only screen and (max-width: 1200px) {
+  body #video-circle .review {
+    font-size: 0.8rem;
+    padding-left: 5rem; } }
+
+@media only screen and (max-width: 1000px) {
+  body #video-circle .review {
+    font-size: 0.5rem;
+    left: 70%; } }
+
+@media only screen and (max-width: 1200px) {
+  body #search i {
+    top: 2rem;
+    left: 32%;
+    font-size: 12rem; } }
+
+@media only screen and (max-width: 1000px) {
+  body #search i {
+    top: 2rem;
+    left: 25%;
+    font-size: 12rem; } }
+
+@media only screen and (max-width: 770px) {
+  body #search i {
+    top: 2rem;
+    left: 17%;
+    font-size: 12rem; } }
+
+@media only screen and (max-width: 500px) {
+  body #search i {
+    left: 8%;
+    font-size: 10rem; }
+  body #video-circle .cir {
+    left: 0; } }
