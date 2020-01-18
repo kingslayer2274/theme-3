@@ -5,7 +5,11 @@ $dark-blue: #0e76ef;
 $dark: #003a48;
 
 body {
+  nav {
+    box-shadow: 0px 1px 10px rgba($blue, 0.4);
+  }
   #home {
+    margin-top: 5rem;
     .home-text {
       .primary {
         font-size: 2.5rem;
@@ -17,6 +21,8 @@ body {
       button {
         background-color: $blue;
         border-radius: 4rem;
+        font-size: 0.8rem;
+        font-weight: bold;
       }
       i {
         color: $blue;
@@ -36,13 +42,17 @@ body {
 
   #presenting {
     margin-top: 14rem;
-    background-image: url("../Appio\ Site_files/half-circle.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    position: relative;
+    .half-circle {
+      position: absolute;
+      top: -3rem;
+      left: 0;
+      max-height: 50rem;
+    }
 
     .card-body {
       border-radius: 5px;
-      box-shadow: 0px 3px 6px grey;
+      box-shadow: 0px 3px 6px 2px rgba($color: $blue, $alpha: 0.2);
       i {
         color: $blue;
         background-color: $very-light-blue;
@@ -81,28 +91,35 @@ body {
     //   max-height: 28rem;
     // }
     .float1 {
-      position: absolute;
       top: 0;
       left: 60%;
       background-color: white;
     }
     .float2 {
-      position: absolute;
       top: 30%;
       left: 30%;
       background-color: white;
     }
     .float3 {
-      position: absolute;
       top: 50%;
       left: 80%;
       background-color: white;
     }
     .float4 {
-      position: absolute;
       top: 80%;
       left: 50%;
       background-color: white;
+    }
+    .float1,
+    .float2,
+    .float3,
+    .float4 {
+      padding-top: 1rem;
+      border-radius: 50%;
+      width: 9rem;
+      height: 9rem;
+      position: absolute;
+      box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.3);
     }
 
     i {
@@ -115,8 +132,12 @@ body {
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: bottom;
+
     img {
-      max-height: 30rem;
+      max-height: 27rem;
+      position: absolute;
+      left: 20%;
+      box-shadow: 0px 40px 60px -40px #456d77;
     }
     .title-num {
       color: $blue;
@@ -132,6 +153,7 @@ body {
     .row {
       .col-md-3 {
         margin-top: 7rem;
+        margin-bottom: 7rem;
         i {
           color: $blue;
         }
@@ -195,15 +217,30 @@ body {
     .vid-cir {
       border-radius: 50%;
       position: relative;
+      margin-top: 5rem;
+
+      .overlay {
+        margin-top: 0rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 50rem;
+        height: 50rem;
+        background-color: #456d77;
+        opacity: 0.7;
+        z-index: 9999;
+      }
     }
     .cir {
       border-radius: 50%;
-      max-width: 22rem;
-      max-height: 22rem;
+      max-width: 21rem;
+      max-height: 21rem;
       position: absolute;
       top: 0;
       left: 30%;
-      z-index: 999;
+      z-index: 5;
       &::after {
         content: url("../Appio\ Site_files/blog2.jpg");
         color: red;
@@ -216,14 +253,14 @@ body {
       max-width: 20px;
     }
     .review {
-      max-width: 18rem;
-      max-height: 18rem;
+      max-width: 21rem;
+      height: 21rem;
       border-radius: 50%;
       background-color: #fff;
-      padding: 2rem 4rem;
+      padding: 2.5rem 2rem 2.5rem 5rem;
       position: absolute;
-      top: 7rem;
-      left: 60%;
+      top: 6rem;
+      left: 55%;
     }
   }
 
@@ -231,6 +268,13 @@ body {
     background-image: url("../Appio\ Site_files/half-circle.png");
     background-repeat: no-repeat;
     background-size: contain;
+    .row {
+      margin-top: 5rem;
+    }
+    img {
+      max-height: 32rem;
+      box-shadow: 65px 15px 59px 28px #eee;
+    }
     i {
       color: $blue;
     }
@@ -277,6 +321,10 @@ body {
   }
   #faq {
     background-color: #f4f8f9;
+    .mar-top {
+      margin-top: 7rem;
+      margin-bottom: 8rem;
+    }
     a {
       color: rgba(0, 0, 0, 0.671);
       &:hover {
@@ -289,22 +337,26 @@ body {
   }
   #blog {
     .main {
+      margin-top: 5rem;
       color: $blue;
       font-size: 0.8rem;
       font-weight: bold;
     }
     .card {
+      margin-top: 3rem;
       &:hover .card-title {
         color: $blue;
         transition: all 0.5s;
       }
       &:hover {
-        box-shadow: 0 3px 4px grey;
+        box-shadow: 0px 0px 4px grey;
         transition: all 0.5s;
       }
     }
   }
   #search {
+    margin-top: 7rem;
+
     position: relative;
     .input-group {
       max-width: 25rem;
@@ -336,6 +388,7 @@ body {
       padding-bottom: 2rem;
     }
     .bg {
+      margin-top: 6rem;
       background-image: url("../Appio\ Site_files/background.png");
       background-repeat: no-repeat;
       background-size: contain;
@@ -343,7 +396,9 @@ body {
     }
     .main {
       margin-top: 10rem;
+      cursor: pointer;
       color: $blue;
+      padding-bottom: 0;
     }
     i {
       font-size: 0.8rem;
@@ -427,7 +482,7 @@ body {
     #video-circle {
       .review {
         font-size: 0.8rem;
-        padding-left: 5rem;
+        padding-left: 8rem;
       }
     }
   }
@@ -436,9 +491,15 @@ body {
 @media only screen and(max-width:1000px) {
   body {
     #video-circle {
+      height: 50rem;
+      .vid-cir {
+      }
       .review {
+        padding: 2rem;
+        padding-top: 5rem;
         font-size: 0.5rem;
-        left: 70%;
+        left: 0%;
+        top: 20rem;
       }
     }
   }
@@ -494,4 +555,163 @@ body {
       }
     }
   }
+}
+
+.owl-next,
+.owl-prev {
+  color: rgba($blue, 0.7) !important;
+}
+
+.spinner-wave-in {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3.125px solid #aaa;
+  animation: spinner 1.2s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Dots */
+
+.spinner-wave-in {
+  box-shadow: inset -1.5625px -1.5625px 0 1.5625px rgb(50, 83, 82);
+}
+
+.spinner-section-far:after {
+  display: none;
+}
+
+/* --- */
+
+.loadercontainer {
+  text-align: center;
+  top: 50vh;
+}
+
+span {
+  margin: 10px;
+}
+
+span:nth-child(4n + 1) {
+  clear: both;
+}
+
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 75px;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 999999;
+}
+
+.loader-1 .loader-outter {
+  position: absolute;
+  border: 4px solid #5a5368;
+  border-left-color: transparent;
+  border-bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: loader-1-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+  animation: loader-1-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+}
+
+.loader-1 .loader-inner {
+  position: absolute;
+  border: 4px solid #4a4352;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  border-right: 0;
+  border-top-color: transparent;
+  -webkit-animation: loader-1-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+  animation: loader-1-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+}
+
+@-webkit-keyframes loader-1-outter {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-1-outter {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-1-inner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes loader-1-inner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.8em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px #f2846d;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 50px;
+  outline: 1px solid #f2846d;
+}
+
+#loading {
+  background-image: linear-gradient(to right, $very-light-blue, $blue, $dark-blue);
+
+  display: block;
+  font-size: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 200vh;
+  color: #0ccac4;
 }

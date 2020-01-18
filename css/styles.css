@@ -1,15 +1,19 @@
-body #home .home-text .primary {
-  font-size: 2.5rem; }
+body nav {
+  box-shadow: 0px 1px 10px rgba(0, 159, 253, 0.4); }
 
-body #home .home-text .secondary {
-  font-size: 3rem; }
-
-body #home .home-text button {
-  background-color: #009ffd;
-  border-radius: 4rem; }
-
-body #home .home-text i {
-  color: #009ffd; }
+body #home {
+  margin-top: 5rem; }
+  body #home .home-text .primary {
+    font-size: 2.5rem; }
+  body #home .home-text .secondary {
+    font-size: 3rem; }
+  body #home .home-text button {
+    background-color: #009ffd;
+    border-radius: 4rem;
+    font-size: 0.8rem;
+    font-weight: bold; }
+  body #home .home-text i {
+    color: #009ffd; }
 
 body .bg {
   position: relative; }
@@ -23,12 +27,15 @@ body .front {
 
 body #presenting {
   margin-top: 14rem;
-  background-image: url("../Appio Site_files/half-circle.png");
-  background-repeat: no-repeat;
-  background-size: contain; }
+  position: relative; }
+  body #presenting .half-circle {
+    position: absolute;
+    top: -3rem;
+    left: 0;
+    max-height: 50rem; }
   body #presenting .card-body {
     border-radius: 5px;
-    box-shadow: 0px 3px 6px grey; }
+    box-shadow: 0px 3px 6px 2px rgba(0, 159, 253, 0.2); }
     body #presenting .card-body i {
       color: #009ffd;
       background-color: #d9f0fe;
@@ -55,25 +62,31 @@ body #story {
   background-size: contain;
   background-position: right; }
   body #story .float1 {
-    position: absolute;
     top: 0;
     left: 60%;
     background-color: white; }
   body #story .float2 {
-    position: absolute;
     top: 30%;
     left: 30%;
     background-color: white; }
   body #story .float3 {
-    position: absolute;
     top: 50%;
     left: 80%;
     background-color: white; }
   body #story .float4 {
-    position: absolute;
     top: 80%;
     left: 50%;
     background-color: white; }
+  body #story .float1,
+  body #story .float2,
+  body #story .float3,
+  body #story .float4 {
+    padding-top: 1rem;
+    border-radius: 50%;
+    width: 9rem;
+    height: 9rem;
+    position: absolute;
+    box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.3); }
   body #story i {
     color: #009ffd; }
 
@@ -84,7 +97,10 @@ body #stock {
   background-size: 40%;
   background-position: bottom; }
   body #stock img {
-    max-height: 30rem; }
+    max-height: 27rem;
+    position: absolute;
+    left: 20%;
+    box-shadow: 0px 40px 60px -40px #456d77; }
   body #stock .title-num {
     color: #009ffd; }
   body #stock .p1,
@@ -95,7 +111,8 @@ body #stock {
 body #usual {
   background-color: #f6f7fb; }
   body #usual .row .col-md-3 {
-    margin-top: 7rem; }
+    margin-top: 7rem;
+    margin-bottom: 7rem; }
     body #usual .row .col-md-3 i {
       color: #009ffd; }
 
@@ -150,15 +167,28 @@ body #video-circle {
   height: 30rem; }
   body #video-circle .vid-cir {
     border-radius: 50%;
-    position: relative; }
+    position: relative;
+    margin-top: 5rem; }
+    body #video-circle .vid-cir .overlay {
+      margin-top: 0rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 50rem;
+      height: 50rem;
+      background-color: #456d77;
+      opacity: 0.7;
+      z-index: 9999; }
   body #video-circle .cir {
     border-radius: 50%;
-    max-width: 22rem;
-    max-height: 22rem;
+    max-width: 21rem;
+    max-height: 21rem;
     position: absolute;
     top: 0;
     left: 30%;
-    z-index: 999; }
+    z-index: 5; }
     body #video-circle .cir::after {
       content: url("../Appio Site_files/blog2.jpg");
       color: red;
@@ -168,19 +198,24 @@ body #video-circle {
   body #video-circle .quote2 {
     max-width: 20px; }
   body #video-circle .review {
-    max-width: 18rem;
-    max-height: 18rem;
+    max-width: 21rem;
+    height: 21rem;
     border-radius: 50%;
     background-color: #fff;
-    padding: 2rem 4rem;
+    padding: 2.5rem 2rem 2.5rem 5rem;
     position: absolute;
-    top: 7rem;
-    left: 60%; }
+    top: 6rem;
+    left: 55%; }
 
 body #verify {
   background-image: url("../Appio Site_files/half-circle.png");
   background-repeat: no-repeat;
   background-size: contain; }
+  body #verify .row {
+    margin-top: 5rem; }
+  body #verify img {
+    max-height: 32rem;
+    box-shadow: 65px 15px 59px 28px #eee; }
   body #verify i {
     color: #009ffd; }
 
@@ -218,6 +253,9 @@ body #plans {
 
 body #faq {
   background-color: #f4f8f9; }
+  body #faq .mar-top {
+    margin-top: 7rem;
+    margin-bottom: 8rem; }
   body #faq a {
     color: rgba(0, 0, 0, 0.671); }
     body #faq a:hover {
@@ -226,19 +264,22 @@ body #faq {
     font-size: 0.8rem; }
 
 body #blog .main {
+  margin-top: 5rem;
   color: #009ffd;
   font-size: 0.8rem;
   font-weight: bold; }
 
-body #blog .card:hover .card-title {
-  color: #009ffd;
-  transition: all 0.5s; }
-
-body #blog .card:hover {
-  box-shadow: 0 3px 4px grey;
-  transition: all 0.5s; }
+body #blog .card {
+  margin-top: 3rem; }
+  body #blog .card:hover .card-title {
+    color: #009ffd;
+    transition: all 0.5s; }
+  body #blog .card:hover {
+    box-shadow: 0px 0px 4px grey;
+    transition: all 0.5s; }
 
 body #search {
+  margin-top: 7rem;
   position: relative; }
   body #search .input-group {
     max-width: 25rem;
@@ -265,6 +306,7 @@ body footer .border-down {
   padding-bottom: 2rem; }
 
 body footer .bg {
+  margin-top: 6rem;
   background-image: url("../Appio Site_files/background.png");
   background-repeat: no-repeat;
   background-size: contain;
@@ -272,7 +314,9 @@ body footer .bg {
 
 body footer .main {
   margin-top: 10rem;
-  color: #009ffd; }
+  cursor: pointer;
+  color: #009ffd;
+  padding-bottom: 0; }
 
 body footer i {
   font-size: 0.8rem; }
@@ -333,12 +377,17 @@ body footer .cp {
 @media only screen and (max-width: 1200px) {
   body #video-circle .review {
     font-size: 0.8rem;
-    padding-left: 5rem; } }
+    padding-left: 8rem; } }
 
 @media only screen and (max-width: 1000px) {
-  body #video-circle .review {
-    font-size: 0.5rem;
-    left: 70%; } }
+  body #video-circle {
+    height: 50rem; }
+    body #video-circle .review {
+      padding: 2rem;
+      padding-top: 5rem;
+      font-size: 0.5rem;
+      left: 0%;
+      top: 20rem; } }
 
 @media only screen and (max-width: 1200px) {
   body #search i {
@@ -364,3 +413,129 @@ body footer .cp {
     font-size: 10rem; }
   body #video-circle .cir {
     left: 0; } }
+
+.owl-next,
+.owl-prev {
+  color: rgba(0, 159, 253, 0.7) !important; }
+
+.spinner-wave-in {
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3.125px solid #aaa;
+  animation: spinner 1.2s linear infinite; }
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0); }
+  100% {
+    transform: rotate(360deg); } }
+
+/* Dots */
+.spinner-wave-in {
+  box-shadow: inset -1.5625px -1.5625px 0 1.5625px #325352; }
+
+.spinner-section-far:after {
+  display: none; }
+
+/* --- */
+.loadercontainer {
+  text-align: center;
+  top: 50vh; }
+
+span {
+  margin: 10px; }
+
+span:nth-child(4n + 1) {
+  clear: both; }
+
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 75px;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 999999; }
+
+.loader-1 .loader-outter {
+  position: absolute;
+  border: 4px solid #5a5368;
+  border-left-color: transparent;
+  border-bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-animation: loader-1-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+  animation: loader-1-outter 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite; }
+
+.loader-1 .loader-inner {
+  position: absolute;
+  border: 4px solid #4a4352;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  border-right: 0;
+  border-top-color: transparent;
+  -webkit-animation: loader-1-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite;
+  animation: loader-1-inner 1s cubic-bezier(0.42, 0.61, 0.58, 0.41) infinite; }
+
+@-webkit-keyframes loader-1-outter {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes loader-1-outter {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes loader-1-inner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+@keyframes loader-1-inner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg); } }
+
+body::-webkit-scrollbar {
+  width: 0.8em; }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 3px #f2846d; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  border-radius: 50px;
+  outline: 1px solid #f2846d; }
+
+#loading {
+  background-image: linear-gradient(to right, #d9f0fe, #009ffd, #0e76ef);
+  display: block;
+  font-size: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 200vh;
+  color: #0ccac4; }
