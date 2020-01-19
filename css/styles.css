@@ -94,15 +94,25 @@ body #stock {
   margin-top: 7rem;
   background-image: url("../Appio Site_files/work-back.png");
   background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: bottom; }
+  background-size: 50%;
+  background-position: bottom;
+  min-height: 40rem; }
   body #stock img {
     max-height: 27rem;
     position: absolute;
     left: 20%;
+    top: 30%;
     box-shadow: 0px 40px 60px -40px #456d77; }
   body #stock .title-num {
-    color: #009ffd; }
+    color: #009ffd;
+    margin-right: 0;
+    padding-right: 0; }
+  body #stock .title,
+  body #stock .title-num {
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-left: 0;
+    padding-left: 0; }
   body #stock .p1,
   body #stock .p3 {
     border-bottom: 1px solid #eee;
@@ -112,9 +122,25 @@ body #usual {
   background-color: #f6f7fb; }
   body #usual .row .col-md-3 {
     margin-top: 7rem;
-    margin-bottom: 7rem; }
+    margin-bottom: 4rem; }
+    body #usual .row .col-md-3 .h4 {
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-top: 0.9rem !important; }
+    body #usual .row .col-md-3 .text-muted {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+      line-height: 1.5rem; }
     body #usual .row .col-md-3 i {
       color: #009ffd; }
+
+body #screens .primary {
+  margin-top: 7rem;
+  margin-bottom: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #009ffd;
+  padding-bottom: 0; }
 
 body #screens .owl-nav button {
   position: absolute;
@@ -223,9 +249,17 @@ body #plans {
   background-image: url("../Appio Site_files/backprice.png");
   background-repeat: no-repeat;
   background-size: cover; }
+  body #plans .primary {
+    margin-top: 7rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #009ffd; }
   body #plans .card {
     border-radius: 7px;
     position: relative; }
+    body #plans .card hr {
+      max-width: 15%; }
     body #plans .card .border-word {
       font-size: 0.8rem;
       border-radius: 5rem;
@@ -271,6 +305,15 @@ body #blog .main {
 
 body #blog .card {
   margin-top: 3rem; }
+  body #blog .card .card-title {
+    font-size: 0.8rem;
+    font-weight: bold; }
+  body #blog .card .card-text {
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee; }
+  body #blog .card small {
+    font-size: 0.9rem; }
   body #blog .card:hover .card-title {
     color: #009ffd;
     transition: all 0.5s; }
@@ -408,6 +451,11 @@ body footer .cp {
     font-size: 12rem; } }
 
 @media only screen and (max-width: 500px) {
+  body #usual .row .col-md-3 {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    body #usual .row .col-md-3 .mb {
+      margin-bottom: 3rem; }
   body #search i {
     left: 8%;
     font-size: 10rem; }
@@ -521,12 +569,12 @@ body::-webkit-scrollbar {
   width: 0.8em; }
 
 body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 3px #f2846d; }
+  -webkit-box-shadow: inset 0 0 3px #0e76ef; }
 
 body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   border-radius: 50px;
-  outline: 1px solid #f2846d; }
+  outline: 1px solid #003a48; }
 
 #loading {
   background-image: linear-gradient(to right, #d9f0fe, #009ffd, #0e76ef);
@@ -538,4 +586,5 @@ body::-webkit-scrollbar-thumb {
   z-index: 999;
   width: 100vw;
   height: 200vh;
-  color: #0ccac4; }
+  color: #0ccac4;
+  overflow-x: hidden; }
