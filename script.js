@@ -97,6 +97,7 @@ function onReady(callback) {
       callback.call(this);
     }
     if (loading) {
+      console.log(loading);
       $(".navbar").removeClass("fixed-top");
       console.log("hidden");
     } else {
@@ -168,4 +169,11 @@ $(window).scroll(function() {
 btn.on("click", function(e) {
   e.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "300");
+});
+
+$(window).scroll(function() {
+  var height = $(window).scrollTop();
+  if (height > 2) {
+    $(".navbar").addClass("fixed-top");
+  }
 });
