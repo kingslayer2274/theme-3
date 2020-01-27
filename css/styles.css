@@ -237,7 +237,7 @@ body #verify {
   background-image: url("../Appio Site_files/half-circle.png");
   background-repeat: no-repeat;
   background-size: contain; }
-  body #verify .row {
+  body #verify .rt {
     margin-top: 5rem; }
   body #verify img {
     max-height: 32rem;
@@ -456,10 +456,27 @@ body footer .cp {
     margin-right: 9rem; }
   body #plans {
     background-image: url(); }
+  body #verify {
+    background-image: url(); }
   body #story {
     background-image: url(); }
+    body #story .mar {
+      height: 40rem; }
+    body #story .float1 {
+      top: 10%;
+      left: 5%; }
+    body #story .float2 {
+      top: 30%;
+      left: 50%; }
+    body #story .float3 {
+      top: 50%;
+      left: 7%; }
+    body #story .float4 {
+      top: 74%;
+      left: 50%; }
   body #stock {
-    background-image: url(); }
+    background-image: url();
+    margin-top: 40rem; }
   body #usual .row .col-md-3 {
     margin-top: 1rem;
     margin-bottom: 1rem; }
@@ -597,3 +614,65 @@ body::-webkit-scrollbar-thumb {
   height: 200vh;
   color: #0ccac4;
   overflow-x: hidden; }
+
+.hidden {
+  display: none; }
+
+#button {
+  display: inline-block;
+  background-color: #009ffd;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000; }
+
+#button::after {
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff; }
+
+#button:hover {
+  cursor: pointer;
+  background-color: #333; }
+
+#button:active {
+  background-color: #555; }
+
+#button.show {
+  opacity: 1;
+  visibility: visible; }
+
+/* Styles for the content section */
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: "Font Awesome 5 Free", serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9; }
+
+@media (min-width: 500px) {
+  .content {
+    width: 43%; }
+  #button {
+    margin: 30px; } }
+
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5; }
+
+.content h3 {
+  font-style: italic;
+  color: #96a2a7; }

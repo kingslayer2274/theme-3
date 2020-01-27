@@ -298,7 +298,7 @@ body {
     background-image: url("../Appio\ Site_files/half-circle.png");
     background-repeat: no-repeat;
     background-size: contain;
-    .row {
+    .rt {
       margin-top: 5rem;
     }
     img {
@@ -604,11 +604,34 @@ body {
     #plans {
       background-image: url();
     }
+    #verify {
+      background-image: url();
+    }
     #story {
       background-image: url();
+      .mar {
+        height: 40rem;
+      }
+      .float1 {
+        top: 10%;
+        left: 5%;
+      }
+      .float2 {
+        top: 30%;
+        left: 50%;
+      }
+      .float3 {
+        top: 50%;
+        left: 7%;
+      }
+      .float4 {
+        top: 74%;
+        left: 50%;
+      }
     }
     #stock {
       background-image: url();
+      margin-top: 40rem;
     }
     #usual {
       .row {
@@ -793,4 +816,74 @@ body::-webkit-scrollbar-thumb {
   height: 200vh;
   color: #0ccac4;
   overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+//back to top
+
+#button {
+  display: inline-block;
+  background-color: $blue;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f106";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: "Font Awesome 5 Free", serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+@media (min-width: 500px) {
+  .content {
+    width: 43%;
+  }
+  #button {
+    margin: 30px;
+  }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
 }

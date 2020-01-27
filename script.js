@@ -96,6 +96,13 @@ function onReady(callback) {
       window.clearInterval(intervalId);
       callback.call(this);
     }
+    if (loading) {
+      $(".navbar").removeClass("fixed-top");
+      console.log("hidden");
+    } else {
+      $(".navbar").addClass("fixed-top");
+      console.log("shown");
+    }
   }, 1000);
 }
 function setVisible(selector, visible) {
@@ -116,11 +123,6 @@ function loading() {
 
 function setVisible(selector, visible) {
   document.querySelector(selector).style.display = visible ? "block" : "none";
-}
-if (loading) {
-  setVisible(".navbar", true);
-} else {
-  setVisible(".navbar", false);
 }
 
 $(document).ready(function() {
@@ -145,4 +147,25 @@ $(document).ready(function() {
       });
     }
   });
+});
+
+$(".overlay").click(function() {
+  $(".overlay").toggleClass("hidden");
+});
+
+//back to top
+
+var btn = $("#button");
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
+});
+
+btn.on("click", function(e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "300");
 });
