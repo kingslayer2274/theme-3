@@ -596,6 +596,11 @@ body {
 
 @media only screen and(max-width:500px) {
   body {
+    nav {
+      .navbar-brand {
+        margin-right: 9rem;
+      }
+    }
     #plans {
       background-image: url();
     }
