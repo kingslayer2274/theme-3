@@ -547,8 +547,9 @@ body {
       .vid-cir {
       }
       .review {
+        text-align: center;
         padding: 2rem;
-        padding-top: 5rem;
+        padding-top: 7rem;
         font-size: 0.5rem;
         left: 0%;
         top: 20rem;
@@ -595,6 +596,15 @@ body {
 
 @media only screen and(max-width:500px) {
   body {
+    #plans {
+      background-image: url();
+    }
+    #story {
+      background-image: url();
+    }
+    #stock {
+      background-image: url();
+    }
     #usual {
       .row {
         .col-md-3 {

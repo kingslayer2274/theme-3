@@ -426,8 +426,9 @@ body footer .cp {
   body #video-circle {
     height: 50rem; }
     body #video-circle .review {
+      text-align: center;
       padding: 2rem;
-      padding-top: 5rem;
+      padding-top: 7rem;
       font-size: 0.5rem;
       left: 0%;
       top: 20rem; } }
@@ -451,6 +452,12 @@ body footer .cp {
     font-size: 12rem; } }
 
 @media only screen and (max-width: 500px) {
+  body #plans {
+    background-image: url(); }
+  body #story {
+    background-image: url(); }
+  body #stock {
+    background-image: url(); }
   body #usual .row .col-md-3 {
     margin-top: 1rem;
     margin-bottom: 1rem; }

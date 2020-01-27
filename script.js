@@ -11,7 +11,7 @@ jQuery("#carousel2").owlCarousel({
   autoHeight: true,
   autoplayTimeout: 7000,
   smartSpeed: 800,
-  nav: true,
+  nav: false,
   responsive: {
     0: {
       items: 1
@@ -62,15 +62,6 @@ jQuery("#carousel").owlCarousel({
       items: 1
     }
   }
-});
-
-$(".owl-carousel")
-  .find(".owl-nav")
-  .removeClass("disabled");
-$(".owl-carousel").on("changed.owl.carousel", function(event) {
-  $(this)
-    .find(".owl-nav")
-    .removeClass("disabled");
 });
 
 $("body").scrollspy({ target: "#main-nav" });
@@ -131,3 +122,27 @@ if (loading) {
 } else {
   setVisible(".navbar", false);
 }
+
+$(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(document).width() < 500) {
+      $(".owl-carousel")
+        .find(".owl-nav")
+        .addClass("disabled");
+      $(".owl-carousel").on("changed.owl.carousel", function(event) {
+        $(this)
+          .find(".owl-nav")
+          .addClass("disabled");
+      });
+    } else {
+      $(".owl-carousel")
+        .find(".owl-nav")
+        .removeClass("disabled");
+      $(".owl-carousel").on("changed.owl.carousel", function(event) {
+        $(this)
+          .find(".owl-nav")
+          .removeClass("disabled");
+      });
+    }
+  });
+});
