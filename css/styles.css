@@ -454,12 +454,22 @@ body footer .cp {
 @media only screen and (max-width: 500px) {
   body nav .navbar-brand {
     margin-right: 9rem; }
+  body #home .home-text .primary {
+    margin-top: 4rem;
+    font-size: 1.8rem; }
+  body #home .home-text .secondary {
+    font-size: 1.8rem;
+    margin-bottom: 2rem; }
+  body #home .home-text .fa-envira {
+    margin-left: -1rem; }
   body #plans {
     background-image: url(); }
   body #verify {
     background-image: url(); }
   body #story {
     background-image: url(); }
+    body #story .title {
+      margin-top: 8rem; }
     body #story .mar {
       height: 40rem; }
     body #story .float1 {
@@ -477,13 +487,15 @@ body footer .cp {
   body #stock {
     background-image: url();
     margin-top: 40rem; }
+    body #stock .primary {
+      margin-top: 8rem; }
   body #usual .row .col-md-3 {
     margin-top: 1rem;
     margin-bottom: 1rem; }
     body #usual .row .col-md-3 .mb {
       margin-bottom: 3rem; }
   body #search i {
-    left: 8%;
+    left: 5%;
     font-size: 10rem; }
   body #video-circle .cir {
     left: 0; } }

@@ -601,6 +601,21 @@ body {
         margin-right: 9rem;
       }
     }
+    #home {
+      .home-text {
+        .primary {
+          margin-top: 4rem;
+          font-size: 1.8rem;
+        }
+        .secondary {
+          font-size: 1.8rem;
+          margin-bottom: 2rem;
+        }
+        .fa-envira {
+          margin-left: -1rem;
+        }
+      }
+    }
     #plans {
       background-image: url();
     }
@@ -609,6 +624,9 @@ body {
     }
     #story {
       background-image: url();
+      .title {
+        margin-top: 8rem;
+      }
       .mar {
         height: 40rem;
       }
@@ -632,6 +650,9 @@ body {
     #stock {
       background-image: url();
       margin-top: 40rem;
+      .primary {
+        margin-top: 8rem;
+      }
     }
     #usual {
       .row {
@@ -646,7 +667,7 @@ body {
     }
     #search {
       i {
-        left: 8%;
+        left: 5%;
         font-size: 10rem;
       }
     }
